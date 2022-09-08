@@ -18,8 +18,8 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" style={{fontSize: 19}}>Home</Nav.Link>
-            <Nav.Link href="#link" style={{fontSize: 19}}>Link</Nav.Link>
+            <Nav.Link href="/" style={{fontSize: 19}}>Home</Nav.Link>
+            <Nav.Link href="/bmr" style={{fontSize: 19}}>BMR</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown" style={{fontSize: 19}}>
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

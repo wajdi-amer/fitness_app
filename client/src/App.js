@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from "./components/NavigationBar";
 import Homepage from "./components/Homepage/Homepage";
 import BMRCalculator from "./components/BMR/BMRCalculator";
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <Route path='/bmr' element={<BMRCalculator/>}/>
       <Route path='*' element={<h1>page not found</h1>}/> 
     </Routes>
+    <Footer/>
     </>
   );
 }

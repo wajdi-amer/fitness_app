@@ -20,10 +20,12 @@ export default function Homepage() {
     return (
         <div>
             <Header />
-            <InfoCard title='Nutrition' content={nutritionCard.content} imgUrl={nutritionCard.imgUrl}
-                imgAlt={nutritionCard.imgAlt} style={nutritionCard.style} />
-            <InfoCard title='Workout' content={workoutCard.content} imgUrl={workoutCard.imgUrl}
-                imgAlt={workoutCard.imgAlt} style={workoutCard.style} />
+            <div className='info-cards'>
+                <InfoCard title='Nutrition' content={nutritionCard.content} imgUrl={nutritionCard.imgUrl}
+                    imgAlt={nutritionCard.imgAlt} style={nutritionCard.style} />
+                <InfoCard title='Workout' content={workoutCard.content} imgUrl={workoutCard.imgUrl}
+                    imgAlt={workoutCard.imgAlt} style={workoutCard.style} />
+            </div>
         </div>
     )
 }

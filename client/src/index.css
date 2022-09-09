@@ -86,3 +86,11 @@ img {
     margin: auto;
     justify-content: space-between;
 }
+
+.bmr-calculator {
+    height: 1000px;
+}
+
+.result-container {
+    text-align: center;
+}

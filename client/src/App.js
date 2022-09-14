@@ -5,6 +5,7 @@ import NavigationBar from "./components/NavigationBar";
 import Homepage from "./components/Homepage/Homepage";
 import Footer from "./components/Footer";
 import Calculator from "./components/BasicCalculators/Calculator";
+import Nutrition from "./components/Nutrition/Nutrition";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" element={<Homepage/>}/>
       <Route path='/bmr' element={<Calculator option='bmr'/>}/>
       <Route path='/bmi' element={<Calculator option='bmi'/>}/>
+      <Route path='/nutrition' element={<Nutrition/>}/>
       <Route path='*' element={<h1>page not found</h1>}/> 
     </Routes>
     <Footer/>

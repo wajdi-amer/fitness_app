@@ -19,7 +19,7 @@ function NavigationBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/" style={{ fontSize: 19 }}>Home</Nav.Link>
-            <Nav.Link href="/" style={{ fontSize: 19 }}>Signup Login</Nav.Link>
+            <Nav.Link href="/nutrition" style={{ fontSize: 19 }}>Nutrition</Nav.Link>
             <NavDropdown title="Calculators" id="basic-nav-dropdown" style={{ fontSize: 19 }}>
               <NavDropdown.Item href="/bmr">BMR</NavDropdown.Item>
               <NavDropdown.Item href="/bmi">

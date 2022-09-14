@@ -9,21 +9,21 @@ function NavigationBar() {
     <Navbar bg="dark" variant='dark' expand="lg">
       <Container>
         <Navbar.Brand>
-            <img src='https://i.ibb.co/dgvL3qw/fitness-logo.png'
+          <img src='https://i.ibb.co/dgvL3qw/fitness-logo.png'
             width='160px'
             alt="running-man logo"
-            />
-            
-            </Navbar.Brand>
+          />
+
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/" style={{fontSize: 19}}>Home</Nav.Link>
-            <Nav.Link href="/bmr" style={{fontSize: 19}}>BMR</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown" style={{fontSize: 19}}>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <Nav.Link href="/" style={{ fontSize: 19 }}>Home</Nav.Link>
+            <Nav.Link href="/" style={{ fontSize: 19 }}>Signup Login</Nav.Link>
+            <NavDropdown title="Calculators" id="basic-nav-dropdown" style={{ fontSize: 19 }}>
+              <NavDropdown.Item href="/bmr">BMR</NavDropdown.Item>
+              <NavDropdown.Item href="/bmi">
+                BMI
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />

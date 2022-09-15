@@ -1,18 +1,25 @@
 import React, { useState } from 'react';
 import HorizontalScrollbar from '../components/HorizontalScrollbar';
 import { Box, Stack, TextField, Typography, Button } from '@mui/material';
-import exercises from '../api/exercises';
+import exercisesApi from '../api/exercisesApi';
 import { fetchData } from '../utils/fetchData';
 
 
 const Exercises = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const [exercises, setExercises] = useState([]);
 
+    
     const handleSearch = async () => {
         if(searchTerm) {
-            const exercisesData = await fetchData(exercises, '/bodyPartList');
+            const exercisesData = await fetchData(exercisesApi);
 
-            console.log(exercisesData);
+            const searchedExercises = exercisesData.data.filter(
+                (exercise) => exercise.name.toLowerCase().includes(searchTerm)
+            );
+
+            setSearchTerm('');
+            setExercises(searchedExercises);
         }
     }
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import nutrition from '../api/nutrition';
+import nutritionApi from '../api/nutritionApi';
 import { fetchData } from '../utils/fetchData';
 
 // TODO: state management, page styling, alert message styling
@@ -20,7 +20,7 @@ export default function Nutrition() {
     async function getNutritionFacts(foodToSearch) {
         if (food) {
             try {
-                const results = await fetchData(nutrition, '/v1/nutrition', {
+                const results = await fetchData(nutritionApi, '/v1/nutrition', {
                     params: { query: foodToSearch }
                 })
                 setFoodName(results.data[0].name.charAt(0).toUpperCase() + results.data[0].name.slice(1));

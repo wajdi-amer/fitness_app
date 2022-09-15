@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import nutrition from '../api/nutrition';
+import { fetchData } from '../utils/fetchData';
 
 // TODO: state management, page styling, alert message styling
 
@@ -19,11 +20,8 @@ export default function Nutrition() {
     async function getNutritionFacts(foodToSearch) {
         if (food) {
             try {
-                const results = await axios.get('https://api.api-ninjas.com/v1/nutrition', {
-                    params: { query: foodToSearch },
-                    headers: {
-                        'X-Api-Key': 'KVxJF8qHpPJrv3qn+1I/8Q==C7znJl79JxZuMJOk'
-                    }
+                const results = await fetchData(nutrition, '/v1/nutrition', {
+                    params: { query: foodToSearch }
                 })
                 setFoodName(results.data[0].name.charAt(0).toUpperCase() + results.data[0].name.slice(1));
                 setFoodSize(results.data[0].serving_size_g);

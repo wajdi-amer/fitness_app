@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import CalculatorInfo from './CalculatorInfo';
+import CalculatorInfo from '../components/CalculatorInfo';
 
 export default function Calculator(props) {
     const [age, setAge] = useState('');

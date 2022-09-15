@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from "./Header";
-import InfoCard from "./InfoCard";
+import Header from "../components/Header";
+import InfoCard from "../components/InfoCard";
 
 const nutritionCard = {
     content: 'Want to know how to calculate your macros? Ever wondered how much protein and carbs you should eat?',

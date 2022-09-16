@@ -1,11 +1,11 @@
-import React, {useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Pagination from '@mui/material/Pagination';
 import { Box, Stack, Typography } from '@mui/material';
 import ExerciseCard from './ExerciseCard';
-import fetchData from '../utils/fetchData';
+import { fetchData } from '../utils/fetchData';
 import exercisesApi from '../api/exercisesApi';
 
-const Exercises = ({exercises, setExercises, bodyPart}) => {
+const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 12;
 
@@ -16,9 +16,24 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
   const paginate = (e, value) => {
     setCurrentPage(value);
 
-    window.scrollTo({ top: 420, behavior: 'smooth'})
+    window.scrollTo({ top: 420, behavior: 'smooth' })
   }
 
+  useEffect(() => {
+    const fetchExercisesData = async () => {
+      let exercisesData = [];
+
+      if (bodyPart === 'all') {
+        exercisesData = await fetchData(exercisesApi);
+      } else {
+        exercisesData = await fetchData(exercisesApi, `/bodyPart/${bodyPart}`);
+      }
+
+      setExercises(exercisesData.data);
+    }
+
+    fetchExercisesData();
+  }, [bodyPart]);
 
   return (
     <Box id='exercises' mt='20px' minHeight='500px'>
@@ -30,7 +45,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
       </Stack>
       <Stack mt='100px' alignItems='center'>
         {exercises.length > exercisesPerPage && (
-          <Pagination 
+          <Pagination
             // variant='outlined'
             color='primary'
             defaultPage={1}

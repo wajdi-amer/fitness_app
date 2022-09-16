@@ -32,6 +32,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
             setSearchTerm('');
             setExercises(searchedExercises);
+            window.scrollTo({top: 420, behavior: 'smooth'})
         }
     }
     return (

@@ -19,7 +19,7 @@ function App() {
       <Route path='/bmi' element={<Calculator option='bmi'/>}/>
       <Route path='/nutrition' element={<Nutrition/>}/>
       <Route path='/exercises' element={<ExercisesHome/>}/>
-      <Route path='/exercises/:id' element={<ExerciseDetails/>}/>
+      <Route path='/exercise/:id' element={<ExerciseDetails/>}/>
       <Route path='*' element={<h1>page not found</h1>}/> 
     </Routes>
     <Footer/>

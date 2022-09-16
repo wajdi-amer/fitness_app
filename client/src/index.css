@@ -64,7 +64,7 @@ img {
 .footer-container {
     position: absolute;
     bottom: 0px;
-    background-color: rgb(33,37,41);
+    background-color: rgb(33, 37, 41);
     width: 100%;
     border-top: 1px solid #0175e7;
     color: #0175e7;
@@ -80,7 +80,7 @@ img {
 }
 
 .text-container {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: row;
     width: 200px;
@@ -94,4 +94,30 @@ img {
 
 .result-container {
     text-align: center;
+}
+
+
+.bodyPart-card {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+}
+
+.bodyPart-card:hover {
+    transform: scale(0.9, 0.9);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.right-arrow,
+.left-arrow {
+    cursor: pointer;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+    transform: scale(0.95, 0.95);
 }

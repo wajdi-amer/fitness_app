@@ -146,3 +146,14 @@ img {
 .MuiPagination-root {
     margin-bottom: 135px;
 }
+
+.exerciseDetails-card {
+    background-color: rgba(33, 37, 41, 0.15);
+    border-top: 4px solid #212529;
+    border-bottom-left-radius: 20px;
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    justify-content: space-between;
+}

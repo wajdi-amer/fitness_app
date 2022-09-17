@@ -159,11 +159,15 @@ img {
 }
 
 .videos-container {
-    height: 400px;
+    height: 300px;
     margin-bottom: 50px;
 }
 
 .videos-container img {
     width: 350px;
     border: 2px solid #0175e7;
+}
+
+.similarExercises-container {
+    height: 550px;
 }

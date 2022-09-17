@@ -48,7 +48,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
                 <Button variant='contained' sx={{ height: '24px' }} onClick={handleSearch}>Search</Button>
             </Box>
             <Box className='mt-5' width='1000px'>
-                <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
+                <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} isBodyPart/>
             </Box>
         </Stack>
     )

@@ -11,6 +11,8 @@ import SimilarExercises from '../components/SimilarExercises';
 const ExerciseDetails = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
+  const [similarTargetExercises, setSimilarTargetExercises] = useState([]);
+  const [similarEquipmentExercises, setSimilarEquipmentExercises] = useState([]);
 
   const { id } = useParams();
 
@@ -23,6 +25,12 @@ const ExerciseDetails = () => {
         params: { query: exerciseData.data.name }
       });
         setExerciseVideos(exerciseVideosData.data.contents);
+
+      const similarTargetExercisesData = await fetchData(exercisesApi, `/target/${exerciseData.data.target}`);
+      setSimilarTargetExercises(similarTargetExercisesData.data);
+
+      const similarEquipmentExercisesData = await fetchData(exercisesApi, `/equipment/${exerciseData.data.equipment}`);
+      setSimilarEquipmentExercises(similarEquipmentExercisesData.data);
     }
 
     fetchExerciseData();
@@ -31,7 +39,7 @@ const ExerciseDetails = () => {
     <Box>
       <Details exercise={exerciseDetail}/>
       <ExerciseVideos videos={exerciseVideos} name={exerciseDetail.name}/>
-      <SimilarExercises />
+      <SimilarExercises similarTarget={similarTargetExercises} similarEquipment={similarEquipmentExercises}/>
     </Box>
   )
 }

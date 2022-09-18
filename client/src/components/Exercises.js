@@ -37,7 +37,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
   return (
     <Box id='exercises' mt='20px' minHeight='500px'>
-      <Typography variant='h4' mb='40px'>Showing Results:</Typography>
+      <Typography variant='h4' mb='30px' ml='20px'>Showing Results:</Typography>
       <Stack direction='row' flexWrap='wrap' justifyContent='center' mb='100px'>
         {currentExercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise={exercise} />

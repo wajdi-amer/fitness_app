@@ -2,6 +2,8 @@ body {
     position: relative;
     min-height: 100%;
     min-height: 100vh;
+    /* background: rgb(33,37,41);
+    background: linear-gradient(180deg, rgba(33,37,41,1) 42%, rgba(121,121,121,1) 100%); */
 }
 
 .header-image {

@@ -8,17 +8,16 @@ function NavigationBar() {
   return (
     <Navbar bg="dark" variant='dark' expand="lg">
       <Container>
-        <Navbar.Brand>
+        <Navbar.Brand href='/'>
           <img src='https://i.ibb.co/dgvL3qw/fitness-logo.png'
             width='160px'
             alt="running-man logo"
           />
-
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/" style={{ fontSize: 19 }}>Home</Nav.Link>
+            <Nav.Link href="/exercises" style={{ fontSize: 19 }}>Exercises</Nav.Link>
             <Nav.Link href="/nutrition" style={{ fontSize: 19 }}>Nutrition</Nav.Link>
             <NavDropdown title="Calculators" id="basic-nav-dropdown" style={{ fontSize: 19 }}>
               <NavDropdown.Item href="/bmr">BMR</NavDropdown.Item>

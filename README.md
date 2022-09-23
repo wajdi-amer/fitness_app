@@ -118,7 +118,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free API Key at [RapidAPI](https://rapidapi.com/)
 2. Clone the repo
    ```sh
    git clone https://github.com/wajdi-amer/fitness_app.git
@@ -129,7 +129,7 @@ This is an example of how to list things you need to use the software and how to
    ```
 4. Enter your API in `config.js`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   const REACT_APP_API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -150,9 +150,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
+- [ ] Basic Lifestyle Calculators
+    - [ ] BMI
+    - [ ] BMR
+- [ ] Exploring Thousands of Exercises 
+- [ ] Signing Up & Working out
     - [ ] Nested Feature
 
 See the [open issues](https://github.com/wajdi-amer/fitness_app/issues) for a full list of proposed features (and known issues).
@@ -191,7 +193,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Wajdi Amer - wajdi.amerrr@gmail.com
+
+LinkedIn - https://www.linkedin.com/in/wajdi-am/
 
 Project Link: [https://github.com/wajdi-amer/fitness_app](https://github.com/wajdi-amer/fitness_app)
 

@@ -3,15 +3,16 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import brandLogo from '../assets/images/fitness-logo.png';
 
 function NavigationBar() {
   return (
     <Navbar bg="dark" variant='dark' expand="lg">
       <Container>
         <Navbar.Brand href='/'>
-          <img src='https://i.ibb.co/dgvL3qw/fitness-logo.png'
+          <img src={brandLogo}
             width='160px'
-            alt="running-man logo"
+            alt="fitness-lifestyle logo"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

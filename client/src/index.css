@@ -7,7 +7,7 @@ body {
 }
 
 .header-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85)), url('https://i.ibb.co/NT47TxM/header-image.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85)), url('./assets/images/header-image.png');
     background-position: bottom;
     background-repeat: no-repeat;
     position: relative;
